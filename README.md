@@ -19,9 +19,11 @@ An API that detect expiration date from the product package's picture based on D
 ### Installation
 
     
-    - [X] clone repository
-    - [X] pip install -r requirements.txt
-    - [X] run `python main.py`
+   - [X] clone repository
+   - [X] `pip install -r requirements.txt`
+   - [X] run `python main.py`
+    
+   
 
 
 ### REST-API Endpoints
