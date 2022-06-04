@@ -4,8 +4,9 @@ An API that detect expiration date from the product package's picture based on D
  
 ### Approach
 
-- CNNs
-- DNNs
+- [Scientific Approach](https://www.sciencedirect.com/science/article/pii/S0957417422006728?via%3Dihub)
+- FCOS
+- TesseractOCR
 
 ### Technologies
 
@@ -14,6 +15,7 @@ An API that detect expiration date from the product package's picture based on D
 - FastAPI 0.78.0
 - opencv 4.5.5
 - PyTorch 1.5.0
+- PyTesseract 0.3.9
 ``` 
 
 ### Installation
@@ -28,12 +30,18 @@ An API that detect expiration date from the product package's picture based on D
 
 
 ### REST-API Endpoints
-- GET
+- GET 
+  - /camera/
+  - /my_api/
+  - /picture/
+  - /options/
 - POST
+  - /take_picture_camera/
+  - /load_picture/
 
 ### Project Guideline
 
-- Duration: ` 10 days `
+- Duration: ` 2 Weeks `
 - API Deployment: [Heroku](https://delhaize-api.herokuapp.com/)
 - Deadline: ` 03.06.22 `
 
