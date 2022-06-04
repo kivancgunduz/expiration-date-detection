@@ -22,7 +22,8 @@ An API that detect expiration date from the product package's picture based on D
    - [X] clone repository
    - [X] `pip install -r requirements.txt`
    - [X] run `python main.py`
-    
+  
+<img src="https://raw.githubusercontent.com/kivancgunduz/expiration-date-detection/master/assets/delhaize_api_main.png" height='500'>
    
 
 
