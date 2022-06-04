@@ -7,12 +7,21 @@ An API that detect expiration date from the product package's picture based on D
 - CNNs
 - DNNs
 
-### Installation
+### Technologies
 
 ``` 
 - Python 3.9.5 
-- Django 4.0
+- FastAPI 0.78.0
+- opencv 4.5.5
+- PyTorch 1.5.0
 ``` 
+
+### Installation
+
+    
+    - [x] clone repository
+    - [x] pip install -r requirements.txt
+    - [x] run `python main.py`
 
 
 ### REST-API Endpoints
@@ -22,7 +31,7 @@ An API that detect expiration date from the product package's picture based on D
 ### Project Guideline
 
 - Duration: ` 10 days `
-- Deployment: [Amazon AWS](https://aws.amazon.com)
+- Deployment: [Heroku](https://delhaize-api.herokuapp.com/)
 - Deadline: ` 03.06.22 `
 
 <img src="https://imageio.forbes.com/i-forbesimg/media/lists/companies/delhaize-group_416x416.jpg?format=jpg&height=416&width=416&fit=bounds" height='200'> <img src="https://becode.org/app/uploads/2020/03/cropped-becode-logo-seal.png" height='200'> 
