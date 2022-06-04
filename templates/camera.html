@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="main-test">
+        <h2 style="color:white">Smile, you are being recorded</h2>
+        
+        <div class="card-group" style="width:80rem;margin:1rem;padding:10px;">
+            <div class="card">
+                <img class="card-img" src="{{ url_for('video_original') }}">
+              <div class="card-body">
+                <h5 class="card-title">Original</h5>
+                <p class="card-text"></p>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="{{ url_for('video_gray') }}">
+              <div class="card-body">
+                <h5 class="card-title">Gray</h5>
+                <p class="card-text">This image is not process</p>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="{{ url_for('video_blurr') }}">
+              <div class="card-body">
+                <h5 class="card-title">Blurr</h5>
+                <p class="card-text">This image is process in gray and blurred</p>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="{{ url_for('video_thresold') }}">
+                <div class="card-body">
+                  <h5 class="card-title">Thresold</h5>
+                  <p class="card-text">This image is grayed, blurred and use thresold</p>
+                </div>
+              </div>
+          </div>
+          <div class="card" style="width:20rem;">
+            
+            <div id="card_text" class="card-body">
+              <h5 class="card-title">Real Frame</h5>
+              <p id="text_to_show" class="card-text"></p>
+              <button id="my_button_picture" class="btn btn-danger">Take a picture</button>
+            </div>
+          </div>
+            
+    </div>
+{% endblock %}

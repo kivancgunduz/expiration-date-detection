@@ -1,0 +1,26 @@
+
+{% extends "./base.html" %}
+
+{% block content%}
+<h1 style="color:white">Select your picture</h1>
+<div class="card" style="width: 35rem;">
+    <div class="card-body">
+      <h5 class="card-title">Text detection</h5>
+      <p class="card-text">Please, select a clear picture for testing picture</p>
+      <div>
+        <form action="/submitform" method="post" enctype="multipart/form-data">
+        <label for="formFileLg" class="form-label">File input</label>
+        <input name="my_picture_file" class="form-control form-control-lg" id="formFileLg" type="file">
+        <button id="button-load-image" type="submit" class="btn btn-danger" style="width:20%;margin-top: 20px;">Detect</button>
+      </form>
+      </div>
+    </div>
+</div>
+<div>
+  <p >
+
+  </p>
+</div>
+    
+
+{% endblock %}

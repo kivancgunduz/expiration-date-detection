@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+
+{% block content %} 
+    <div class="main-test">
+        <form method="POST">
+            <div class="mb-3">
+                    {{ form.hidden_tag() }}
+                    {{ form.file.label(class_="form-label") }}
+                    {{ form.file(class_="form-control") }}      
+                    <br>
+                    {{ form.submit(class_="form-label", id="my-analyse-button") }}
+            </div>
+        </form>
+
+        <div class="name-clothes"> {{ name }} </div>
+
+        <div class="test-section-below">
+         
+                <div class="image-border">
+                    <div class="image-background">
+                       <img src="{{ path }}" alt="" class="this-image-background">
+                    </div>
+                </div>
+                <div class="espace-fleche">
+                    <p>-></p>
+                </div>
+                <div class="image-border2">
+                    <div class="image-background2">
+                        <img src="{{ path }}" alt="" class="this-image-background2">
+                    </div>
+                </div>
+                <div class="espace-fleche">
+                    <p>-></p>
+                </div>
+                <div class="image-border2">
+                    <div class="image-background2">
+                        <img src="{{ path }}" alt="" class="this-image-background2">
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+{% endblock %}

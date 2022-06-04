@@ -1,0 +1,27 @@
+
+{% extends "./base.html" %}
+
+{% block content%}
+<h1 style="color:white">Your picture</h1>
+<div class="card" style="width: 35rem;">
+    <img src="../static/Images/picture2.jpg" id="my-loaded-image" class="card-img-top" alt="no image">
+    <div class="card-body">
+      <h5 class="card-title">Text detection</h5>
+      <p class="card-text">File : {{ filename }}</p>
+      <h4 class="card-text" style="color:crimson;">Date : {{ prediction }}</h4>
+      <p class="card-text">Time : {{ time_prediction }} secondes</p>
+      <div>
+        <!-- <form action="/submitform" method="post" enctype="multipart/form-data"> -->
+        <a href="/picture" id="button-loaded-image"  class="btn btn-danger" style="width:20%;margin-top: 20px;">retry pitcture</a>
+        <a href="/camera" id="button-loaded2-image"  class="btn btn-danger" style="width:20%;margin-top: 20px;">retry camera</a>
+      </div>
+    </div>
+</div>
+<div>
+  <p >
+
+  </p>
+</div>
+    
+
+{% endblock %}

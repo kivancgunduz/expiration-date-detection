@@ -1,0 +1,14 @@
+.content .bg-danger {
+    color : #C3112D;
+}
+
+.card .text-bg-light .mb-3 .my_index{
+    margin-left:100px;
+    margin-right:100px;
+}
+  
+/**
+#my-navbar {
+    background-color: #00708a;
+    color: white;
+}**/

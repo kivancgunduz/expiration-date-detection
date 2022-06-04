@@ -1,0 +1,36 @@
+
+{% extends "./base.html" %}
+
+{% block content%}
+<h1 style="color:white;">Read Date</h1>
+<br>
+
+<div class="card mb-3" style="width:30%;height:20%">
+  <img src="../static/Images/api-image.jpg" class="card-img-top" alt="image logo api">
+  <div class="card-body">
+    <h5 class="card-title">Get Date</h5>
+    <p class="card-text">Extracting de date from the image that we gave or the picture that we took from the webcam</p>
+    <h5 class="card-title">HTTP Request</h5>
+    <p class="card-text" style="color:crimson"><strong>http://127.0.0.2:8000/API</strong></p>
+    <h5 class="card-title">Query Parameters</h5>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Parameter</th>
+          <th scope="col">Defaut</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>File</td>
+          <td>False</td>
+          <td>The file that is supose to be uploaded</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  
+  {% endblock %}
